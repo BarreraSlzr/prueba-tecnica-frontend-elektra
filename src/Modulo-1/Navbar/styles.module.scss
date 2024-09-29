@@ -1,0 +1,27 @@
+.container{
+    @apply flex flex-col grow h-full;
+    .header{
+        @apply bg-gray-300 border-gray-300 border-gray-400 border-b;
+        height: var(--sizeBar);
+    }
+    .toggle{
+        @apply flex w-12 h-12 items-center justify-center ml-auto bg-gray-300 border-gray-400 border;
+        width: var(--sizeBar);
+        height: var(--sizeBar);
+
+    }
+    .content{
+        @apply flex flex-col gap-4 p-4 grow border-gray-400 mb-auto border-r;
+    }
+    &.visible{
+        width: 250px;
+    }
+    &.hidden{
+        width: var(--sizeBar);
+        .content{
+            > * {
+                display: none;
+            }
+        }
+    }
+}

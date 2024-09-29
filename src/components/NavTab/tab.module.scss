@@ -1,0 +1,6 @@
+.Tab{
+    @apply inline-block p-4 text-gray-600  rounded-t-lg border border-b-0;
+    &.active{
+        @apply text-gray-800 bg-gray-100;
+    }
+}

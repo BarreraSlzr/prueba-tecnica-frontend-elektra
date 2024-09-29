@@ -1,0 +1,19 @@
+.Table {
+    @apply w-full border-collapse border border-gray-300 table-auto;
+
+    th {
+        @apply  text-center p-2 border-gray-300;
+    }
+
+    tr {
+        @apply hover:bg-gray-100;
+
+        &:nth-child(even) {
+            @apply bg-gray-50;
+        }
+    }
+
+    td {
+        @apply text-center p-2 border-gray-300;
+    }
+}

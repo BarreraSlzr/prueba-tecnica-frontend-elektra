@@ -1,0 +1,14 @@
+.ModalContainer{
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+
+    .Modal{
+        @apply flex flex-col bg-white p-5 rounded shadow-lg gap-4;
+        .Title{
+            @apply text-lg font-bold;
+        }
+        .JSONBody{
+            @apply whitespace-pre-wrap bg-slate-800 text-white p-4;
+        }
+    }
+    
+}

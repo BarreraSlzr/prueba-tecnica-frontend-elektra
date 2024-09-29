@@ -1,0 +1,22 @@
+.container {
+    @apply flex h-full;
+    height: 100vh;
+}
+.content{
+    @apply flex flex-col grow overflow-auto;
+    .main{
+        @apply flex p-4 gap-4 flex-wrap;
+    }
+}
+
+.navbar {
+    @apply flex items-start justify-center bg-gray-200;
+}
+
+.sidebar {
+    @apply sticky top-0 flex items-center justify-center bg-gray-100 z-50;
+}
+
+.statusProgress{
+    @apply flex items-center justify-end p-4;
+}

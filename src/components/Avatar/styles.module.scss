@@ -1,0 +1,17 @@
+.avatar {
+    @apply relative inline-flex items-center justify-center rounded-full overflow-hidden bg-gray-300;
+
+    &::before{
+        @apply w-full h-full absolute rounded-full border;
+        content: " ";
+    }
+  
+    &.image {
+      @apply w-full h-full object-cover rounded-full;
+    }
+  
+    &.placeholder {
+      @apply flex items-center justify-center text-white font-bold bg-blue-500;
+    }
+  }
+  

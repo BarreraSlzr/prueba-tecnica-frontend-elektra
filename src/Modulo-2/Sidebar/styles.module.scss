@@ -1,0 +1,29 @@
+.container{
+    @apply flex gap-4 px-4 items-center justify-between grow bg-gray-100 border-gray-400 border-b;
+    height: var(--sizeBar);
+    
+    .company{
+        @apply flex gap-2 items-center justify-center;
+
+        h1{
+            @apply p-0 m-0;
+        }
+    }
+    .command{
+        @apply flex gap-4 items-center justify-center ;
+        .action{
+            @apply contents;
+            .notification{
+
+            }
+            .avatar{
+
+            }
+        }
+        .profile{
+            @apply flex flex-col items-end;
+            line-height: normal;
+            font-size: smaller;
+        }
+    }
+}
